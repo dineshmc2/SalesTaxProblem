@@ -27,7 +27,7 @@ public class Utils {
 	 * @return rounded number
 	 */
 	public static float roundOff2DigitsNearest05(float num) {
-		int x = Math.round(num * 100);
+		int x = (int) Math.ceil(num * 100);
 		int u = x % 10;
 		x = x / 10;
 

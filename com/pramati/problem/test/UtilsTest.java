@@ -18,6 +18,8 @@ public class UtilsTest {
 
 	@Test
 	public void testRoundOff2DigitsNearest05() {
+		assertTrue(Utils.roundOff2DigitsNearest05(1.504f) == 1.55f);
+		assertTrue(Utils.roundOff2DigitsNearest05(1.5499f) == 1.55f);
 		assertTrue(Utils.roundOff2DigitsNearest05(1.555f) == 1.60f);
 		assertTrue(Utils.roundOff2DigitsNearest05(1.545f) == 1.55f);
 		assertTrue(Utils.roundOff2DigitsNearest05(1.50f) == 1.50f);
